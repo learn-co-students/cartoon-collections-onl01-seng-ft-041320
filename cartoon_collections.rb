@@ -1,14 +1,8 @@
 require 'pry'
 
 def roll_call_dwarves(array)
+  array.collect.each_with_index { |i, index| i < array.size }
   binding.pry
-  i = 0
-  new_array = []
-  while i < array.length
-    new_array << yield(array[i])
-    i = i + 1
-  end
-  puts new_array.each_with_index
 end
 
 def summon_captain_planet# code an argument here
